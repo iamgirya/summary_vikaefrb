@@ -30,7 +30,7 @@ class SkillsWidget extends StatelessWidget {
           const SizedBox(height: 20),
           ...skills.map(
             (skill) => Padding(
-              padding: const EdgeInsets.only(bottom: 10, left: 15),
+              padding: const EdgeInsets.only(bottom: 10),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

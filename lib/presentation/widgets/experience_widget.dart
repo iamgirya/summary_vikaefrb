@@ -65,7 +65,7 @@ class ExperienceWidget extends StatelessWidget {
         const SizedBox(height: 10),
         ...duties.map(
           (duty) => Padding(
-            padding: const EdgeInsets.only(left: 15, bottom: 5),
+            padding: const EdgeInsets.only(bottom: 5),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

@@ -21,16 +21,20 @@ class ToolsWidget extends StatelessWidget {
           Text('Инструменты', style: textTheme.headlineMedium),
           const SizedBox(height: 20),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset('assets/ps.png', width: iconSize, height: iconSize),
+              const SizedBox(width: 20),
               Image.asset('assets/ai.png', width: iconSize, height: iconSize),
+              const SizedBox(width: 20),
               Image.asset('assets/id.png', width: iconSize, height: iconSize),
+              const SizedBox(width: 20),
               SvgPicture.asset(
                 'assets/figma.svg',
                 width: iconSize,
                 height: iconSize,
               ),
+              const SizedBox(width: 20),
               Image.asset(
                 'assets/fontlab-studio.png',
                 width: iconSize,

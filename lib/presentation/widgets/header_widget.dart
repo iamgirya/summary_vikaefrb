@@ -8,7 +8,11 @@ class HeaderWidget extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+      padding: const EdgeInsets.all(40),
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor,
+        borderRadius: BorderRadius.circular(20),
+      ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -16,8 +20,7 @@ class HeaderWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             child: Image.asset(
               'assets/my_photo.png',
-              width: 200,
-              height: 200,
+              width: 425,
               fit: BoxFit.cover,
             ),
           ),

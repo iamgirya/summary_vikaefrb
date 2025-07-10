@@ -11,38 +11,43 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Center(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
-            child: Column(
-              children: [
-                SizedBox(height: 40),
-                HeaderWidget(),
-                SizedBox(height: 20),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(child: ExperienceWidget()),
-                    SizedBox(width: 20),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          SkillsWidget(),
-                          SizedBox(height: 20),
-                          ToolsWidget(),
-                        ],
-                      ),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1400),
+            child: const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Column(
+                children: [
+                  SizedBox(height: 40),
+                  HeaderWidget(),
+                  SizedBox(height: 20),
+                  IntrinsicHeight(
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Expanded(child: ExperienceWidget()),
+                        SizedBox(width: 20),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              SkillsWidget(),
+                              SizedBox(height: 20),
+                              ToolsWidget(),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-                SizedBox(height: 20),
-                ContactsWidget(),
-                SizedBox(height: 20),
-                PortfolioWidget(),
-                SizedBox(height: 40),
-              ],
+                  ),
+                  SizedBox(height: 20),
+                  ContactsWidget(),
+                  SizedBox(height: 20),
+                  PortfolioWidget(),
+                  SizedBox(height: 40),
+                ],
+              ),
             ),
           ),
         ),
