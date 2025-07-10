@@ -7,7 +7,7 @@ class ToolsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    const iconSize = 48.0;
+    const iconSize = 36.0;
 
     return Container(
       padding: const EdgeInsets.all(30),
