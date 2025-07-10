@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:summary_vikaefrb/presentation/pages/home_page.dart';
+import 'package:summary_vikaefrb/presentation/theme/app_theme.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      title: 'Viktoria Babachenko',
+      theme: AppTheme.theme,
+      home: const HomePage(),
     );
   }
 }
