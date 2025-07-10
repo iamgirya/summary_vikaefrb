@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  static const Color backgroundColor = Color(0xFFE9EFF3);
-  static const Color textColor = Color(0xFF2D2D2D);
-  static const Color primaryColor = Color(0xFF00B2FF);
+  static const Color backgroundColor = Color(0xFFD4F2FF);
+  static const Color textColor = Color(0xFF000000);
+  static const Color primaryColor = Color(0xFF29C8FF);
   static const Color cardColor = Color(0xFFFFFFFF);
 
   static final ThemeData theme = ThemeData(
@@ -34,12 +34,16 @@ class AppTheme {
           color: primaryColor,
         ),
         bodyLarge: TextStyle(fontSize: 16, color: textColor, height: 1.5),
-        bodyMedium: TextStyle(fontSize: 14, color: textColor),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          color: textColor,
+          fontWeight: FontWeight.w500,
+        ),
       ),
     ),
     colorScheme: ColorScheme.fromSeed(
       seedColor: primaryColor,
-      background: backgroundColor,
+      surface: backgroundColor,
     ),
   );
 }

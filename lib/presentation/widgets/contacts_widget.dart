@@ -47,7 +47,13 @@ class ContactsWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children:
             _contacts
-                .map((contact) => _buildContactItem(context, contact))
+                .map(
+                  (contact) => _buildContactItem(
+                    context,
+                    contact,
+                    _contacts.last.url == contact.url,
+                  ),
+                )
                 .toList(),
       ),
     );
@@ -60,19 +66,37 @@ class ContactsWidget extends StatelessWidget {
     }
   }
 
-  Widget _buildContactItem(BuildContext context, ContactInfo contact) {
+  Widget _buildContactItem(
+    BuildContext context,
+    ContactInfo contact,
+    bool isLast,
+  ) {
     final textTheme = Theme.of(context).textTheme;
-    return InkWell(
-      onTap: () => _launchUrl(contact.url),
-      borderRadius: BorderRadius.circular(10),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          children: [
-            SvgPicture.asset(contact.icon, width: 24, height: 24),
-            const SizedBox(width: 10),
-            Text(contact.text, style: textTheme.bodyMedium),
-          ],
+    return Flexible(
+      flex: isLast ? 1 : 0,
+      child: InkWell(
+        onTap: () => _launchUrl(contact.url),
+        borderRadius: BorderRadius.circular(10),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: [
+              SizedBox(
+                width: 36,
+                height: 36,
+                child: SvgPicture.asset(contact.icon, fit: BoxFit.contain),
+              ),
+              const SizedBox(width: 15),
+              Flexible(
+                flex: isLast ? 1 : 0,
+                child: Text(
+                  contact.text,
+                  style: textTheme.bodyMedium?.copyWith(fontSize: 16),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

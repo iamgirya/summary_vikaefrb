@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 1400),
-            child: const Padding(
+            child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 80.0),
               child: Column(
                 children: [
@@ -25,7 +25,6 @@ class HomePage extends StatelessWidget {
                   SizedBox(height: 20),
                   IntrinsicHeight(
                     child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         Expanded(child: ExperienceWidget()),
                         SizedBox(width: 20),
@@ -33,7 +32,11 @@ class HomePage extends StatelessWidget {
                           child: Column(
                             children: [
                               SkillsWidget(),
-                              SizedBox(height: 20),
+                              Expanded(
+                                child: ConstrainedBox(
+                                  constraints: BoxConstraints(minHeight: 20),
+                                ),
+                              ),
                               ToolsWidget(),
                             ],
                           ),

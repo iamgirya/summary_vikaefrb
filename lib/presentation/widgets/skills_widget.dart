@@ -32,10 +32,10 @@ class SkillsWidget extends StatelessWidget {
             (skill) => Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('• ', style: TextStyle(fontSize: 16)),
-                  Expanded(child: Text(skill, style: textTheme.bodyMedium)),
+                  Expanded(
+                    child: Text('• $skill', style: textTheme.bodyMedium),
+                  ),
                 ],
               ),
             ),
