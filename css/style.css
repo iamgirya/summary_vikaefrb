@@ -159,6 +159,9 @@ a {
 
 .tools {
     grid-area: tools;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contacts {
@@ -237,6 +240,7 @@ a {
 
 .contact-item img {
     height: 24px;
+    width: 24px;
 }
 
 /* --- PORTFOLIO SECTION --- */
@@ -306,10 +310,7 @@ a {
         margin-bottom: 0;
     }
 
-    .intro__text p {
-        display: none;
-        /* Hide paragraphs on mobile for brevity */
-    }
+    /* The rule for .intro__text p is now removed */
 
     /* --- Main Content Grid --- */
     .main-content {
@@ -327,6 +328,12 @@ a {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+    }
+
+    .contact-item span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     /* --- Tools Section --- */
@@ -363,11 +370,6 @@ a {
         margin-bottom: 20px;
         width: 100px;
         height: 100px;
-    }
-
-    .intro__text p {
-        display: block;
-        /* Show paragraphs again on smallest screens */
     }
 
     .intro__text {
