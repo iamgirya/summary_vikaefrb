@@ -29,14 +29,14 @@
 
 body {
     font-family: 'AA Stetica', sans-serif;
-    background-color: #E9F3FF;
-    color: #2b2b2b;
+    background-color: #DBEBFD;
+    color: #000000;
     font-weight: 400;
     font-size: 16px;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1214px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -55,7 +55,7 @@ h2 {
 h3 {
     font-size: 18px;
     font-weight: 500;
-    color: #2D9CDB;
+    color: #29C8FF;
 }
 
 ul {
@@ -95,14 +95,20 @@ a {
     object-fit: cover;
 }
 
+.intro__text {
+    padding: 0;
+}
+
 .intro__text h1 {
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .intro__text h1 span {
-    color: #2D9CDB;
+    color: #29C8FF;
+    font-weight: 700;
 }
 
 .intro__text p {
@@ -170,7 +176,7 @@ a {
 
 .job ul li::before {
     content: '•';
-    color: #2D9CDB;
+    color: #29C8FF;
     font-size: 20px;
     position: absolute;
     left: 0;
@@ -187,7 +193,7 @@ a {
 
 .skills ul li::before {
     content: '•';
-    color: #2D9CDB;
+    color: #29C8FF;
     font-size: 20px;
     position: absolute;
     left: 0;
@@ -212,7 +218,7 @@ a {
     gap: 10px;
     font-weight: 500;
     transition: opacity 0.3s;
-    color: #2b2b2b;
+    color: #000000;
 }
 
 .contact-item:hover {
@@ -257,6 +263,11 @@ a {
     .intro {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+    }
+
+    .intro__text {
+        padding: 0;
     }
 
     .contacts {
