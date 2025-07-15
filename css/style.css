@@ -29,32 +29,51 @@
 
 body {
     font-family: 'AA Stetica', sans-serif;
-    background-color: #E9F3FF;
-    color: #2b2b2b;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 38px;
+    letter-spacing: 0%;
+    background-color: #DBEBFD;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1214px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 100px 20px;
 }
 
 h1,
-h2,
-h3 {
+h2 {
+    margin-bottom: 24px;
+}
+
+h1 {
     font-weight: 700;
+    font-style: Bold;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 h3 {
-    font-size: 18px;
     font-weight: 500;
+    font-style: Medium;
+    font-size: 31px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
     color: #29C8FF;
 }
 
@@ -86,7 +105,7 @@ a {
 
 .intro__photo {
     flex-shrink: 0;
-    width: 200px;
+    width: 425px;
 }
 
 .intro__photo img {
@@ -101,10 +120,7 @@ a {
 }
 
 .intro__text h1 {
-    font-size: 36px;
-    line-height: 1.2;
     margin-bottom: 20px;
-    font-weight: 400;
 }
 
 .intro__text h1 span {
@@ -124,7 +140,7 @@ a {
 /* --- MAIN CONTENT GRID --- */
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "experience skills"
         "experience tools"
@@ -162,43 +178,36 @@ a {
 }
 
 .job .company {
-    font-size: 14px;
-    color: #828282;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 27px;
+    leading-trim: NONE;
+    line-height: 38px;
+    letter-spacing: 0%;
+    margin-bottom: 16px;
 }
 
 .job ul li {
     position: relative;
     padding-left: 20px;
-    margin-bottom: 8px;
-    line-height: 1.5;
 }
 
 .job ul li::before {
     content: '•';
-    color: #29C8FF;
-    font-size: 20px;
     position: absolute;
     left: 0;
-    top: -2px;
 }
 
 /* --- SKILLS SECTION --- */
 .skills ul li {
     position: relative;
     padding-left: 20px;
-    margin-bottom: 10px;
-    line-height: 1.5;
 }
 
 .skills ul li::before {
     content: '•';
-    color: #29C8FF;
-    font-size: 20px;
     position: absolute;
     left: 0;
-    top: -2px;
 }
 
 /* --- TOOLS SECTION --- */
