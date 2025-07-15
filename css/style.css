@@ -249,6 +249,128 @@ a {
 .portfolio-item img {
     width: 100%;
     border-radius: 20px;
-    display: block;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .container {
+        padding: 40px 15px;
+    }
+
+    h1,
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    /* --- Intro Section --- */
+    .intro.card {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .intro__photo {
+        order: 1;
+        /* Move photo to the right of text */
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    .intro__photo img {
+        border-radius: 50%;
+        /* Make it circular */
+    }
+
+    .intro__text {
+        order: 0;
+        flex-grow: 1;
+        padding: 0;
+    }
+
+    .intro__text h1 {
+        margin-bottom: 0;
+    }
+
+    .intro__text p {
+        display: none;
+        /* Hide paragraphs on mobile for brevity */
+    }
+
+    /* --- Main Content Grid --- */
+    .main-content {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "experience"
+            "skills"
+            "tools"
+            "contacts";
+        gap: 20px;
+    }
+
+    /* --- Contacts Section --- */
+    .contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* --- Tools Section --- */
+    .tool-icons {
+        flex-wrap: wrap;
+    }
+
+    /* --- Portfolio Section --- */
+    .portfolio {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1,
+    h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .intro.card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .intro__photo {
+        order: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .intro__text p {
+        display: block;
+        /* Show paragraphs again on smallest screens */
+    }
+
+    .intro__text {
+        align-items: flex-start;
+    }
 }
