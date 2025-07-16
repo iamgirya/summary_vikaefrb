@@ -259,6 +259,10 @@ a {
     object-fit: cover;
 }
 
+.portfolio-item img:hover {
+    opacity: 0.7;
+}
+
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 1070px) {
 
