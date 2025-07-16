@@ -261,9 +261,32 @@ a {
 .portfolio-item img {
     width: 100%;
     border-radius: 28px;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* --- RESPONSIVE DESIGN --- */
+@media (max-width: 1130px) {
+
+    /* --- Contacts Section --- */
+    .contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .contact-item span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .contact-item img {
+        height: 34px;
+        width: 34px;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 18px;
@@ -315,7 +338,7 @@ a {
     }
 
     .intro__text h1 {
-        margin-bottom: 0;
+        margin-bottom: 15px;
     }
 
     /* The rule for .intro__text p is now removed */
@@ -329,24 +352,6 @@ a {
             "tools"
             "contacts";
         gap: 24px;
-    }
-
-    /* --- Contacts Section --- */
-    .contacts {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .contact-item span {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .contact-item img {
-        height: 34px;
-        width: 34px;
     }
 
     /* --- Tools Section --- */
