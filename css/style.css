@@ -32,7 +32,7 @@ body {
     font-weight: 500;
     font-style: Medium;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 1.5;
     letter-spacing: 0%;
     background-color: #DBEBFD;
 }
@@ -288,7 +288,6 @@ a {
 @media (max-width: 900px) {
     body {
         font-size: 18px;
-        line-height: 1.5;
     }
 
     .container {
@@ -302,6 +301,10 @@ a {
 
     h3 {
         font-size: 24px;
+    }
+
+    .contact-item {
+        font-size: 18px;
     }
 
     .card {
@@ -361,5 +364,24 @@ a {
     .portfolio {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .contact-item {
+        font-size: 14px;
     }
 }

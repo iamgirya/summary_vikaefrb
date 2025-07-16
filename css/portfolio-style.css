@@ -10,7 +10,7 @@ body {
     font-weight: 500;
     font-style: Medium;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 1.5;
     letter-spacing: 0%;
     background-color: #DBEBFD;
 
@@ -55,4 +55,15 @@ body {
 
 .card.margin-top-large {
     margin-top: 250px;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .card.margin-top-large {
+        margin-top: 150px;
+    }
 }
