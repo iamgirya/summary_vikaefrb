@@ -21,7 +21,7 @@ body {
 .portfolio-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1214px;
     margin: 0 auto;
 }
@@ -51,4 +51,8 @@ body {
     margin-bottom: 36px;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.card.margin-top-large {
+    margin-top: 250px;
 }
