@@ -32,7 +32,6 @@ body {
     font-weight: 500;
     font-style: Medium;
     font-size: 24px;
-    leading-trim: NONE;
     line-height: 38px;
     letter-spacing: 0%;
     background-color: #DBEBFD;
@@ -53,7 +52,6 @@ h1 {
     font-weight: 700;
     font-style: Bold;
     font-size: 50px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
 }
@@ -62,7 +60,6 @@ h2 {
     font-weight: 700;
     font-style: Bold;
     font-size: 50px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
 }
@@ -71,7 +68,6 @@ h3 {
     font-weight: 500;
     font-style: Medium;
     font-size: 31px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
     color: #29C8FF;
@@ -184,7 +180,6 @@ a {
     font-weight: 700;
     font-style: Bold;
     font-size: 27px;
-    leading-trim: NONE;
     line-height: 38px;
     letter-spacing: 0%;
     margin-bottom: 16px;
@@ -237,7 +232,6 @@ a {
     font-weight: 700;
     font-style: Bold;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
 }
