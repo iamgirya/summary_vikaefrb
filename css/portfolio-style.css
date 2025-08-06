@@ -15,7 +15,7 @@ body {
     background-color: #DBEBFD;
 
     margin: 0;
-    padding: 40px 20px;
+    padding: 40px;
 }
 
 .portfolio-container {
@@ -61,5 +61,63 @@ body {
 
     .card.margin-top-large {
         margin-top: 150px;
+    }
+}
+
+@media (max-width: 875px) {
+    .portfolio-container.propisi img {
+        margin-bottom: 14px;
+    }
+
+    .portfolio-container.propisi img[alt='Скетч 1'] {
+        content: url('../assets/propisi_mobile/группа 1.svg');
+    }
+
+    .portfolio-container.propisi img[alt='разделитель 0'] {
+        content: url('../assets/propisi_mobile/разделитель 0.svg');
+    }
+
+    .portfolio-container.propisi img[alt='Скетч 2'] {
+        content: url('../assets/propisi_mobile/группа 2.svg');
+    }
+
+    .portfolio-container.propisi img[alt='разделитель 1'] {
+        content: url('../assets/propisi_mobile/разделитель 1.svg');
+    }
+
+    .portfolio-container.propisi img[alt='Скетч 3'] {
+        content: url('../assets/propisi_mobile/группа 3.svg');
+    }
+
+    .portfolio-container.propisi img[alt='разделитель 2'] {
+        content: url('../assets/propisi_mobile/разделитель 2.svg');
+    }
+
+    .portfolio-container.propisi img[alt='Скетч 4'] {
+        content: url('../assets/propisi_mobile/группа 4.svg');
+    }
+
+    .portfolio-container.propisi img[alt='разделитель 3'] {
+        content: url('../assets/propisi_mobile/разделитель 3.svg');
+    }
+
+    .portfolio-container.propisi img[alt='Скетч 5'] {
+        content: url('../assets/propisi_mobile/группа 5.svg');
+    }
+
+    .portfolio-container.propisi img[alt='разделитель 4'] {
+        content: url('../assets/propisi_mobile/разделитель 4.svg');
+    }
+
+    .portfolio-container.propisi img[alt='Скетч 6'] {
+        content: url('../assets/propisi_mobile/группа 6.svg');
+    }
+
+    .portfolio-container.propisi img[alt='разделитель 5'] {
+        content: url('../assets/propisi_mobile/разделитель 5.svg');
+    }
+
+    .portfolio-container.propisi img[alt='Скетч 7'] {
+        content: url('../assets/propisi_mobile/группа 7.svg');
     }
 }
