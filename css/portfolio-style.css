@@ -27,8 +27,9 @@ body {
 }
 
 .portfolio-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    margin-bottom: 50px;
 }
 
 .portfolio-container.vector img:not(:last-child) {
