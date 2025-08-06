@@ -133,6 +133,10 @@ a {
     margin-bottom: 15px;
 }
 
+.mobile-svg {
+    display: none;
+}
+
 /* --- MAIN CONTENT GRID --- */
 .main-content {
     display: grid;
@@ -383,5 +387,20 @@ a {
 
     .contact-item {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .intro-card,
+    .main-content {
+        display: none;
+    }
+
+    .mobile-svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
     }
 }
