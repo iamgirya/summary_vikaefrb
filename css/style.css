@@ -138,15 +138,11 @@ a {
 }
 
 /* --- MAIN CONTENT GRID --- */
+
+.intro-card,
 .main-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "experience skills"
-        "experience tools"
-        "contacts contacts";
-    gap: 24px;
-    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
 }
 
 .experience {
@@ -349,15 +345,6 @@ a {
     /* The rule for .intro__text p is now removed */
 
     /* --- Main Content Grid --- */
-    .main-content {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "experience"
-            "skills"
-            "tools"
-            "contacts";
-        gap: 24px;
-    }
 
     /* --- Tools Section --- */
     .tool-icons {
@@ -372,6 +359,19 @@ a {
 }
 
 @media (max-width: 500px) {
+
+    .intro-card,
+    .main-content {
+        display: none;
+    }
+
+    .mobile-svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+    }
+
     body {
         font-size: 14px;
     }
@@ -387,20 +387,5 @@ a {
 
     .contact-item {
         font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-
-    .intro-card,
-    .main-content {
-        display: none;
-    }
-
-    .mobile-svg {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-bottom: 24px;
     }
 }
