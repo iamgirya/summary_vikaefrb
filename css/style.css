@@ -280,8 +280,8 @@ a {
     }
 
     .contact-item img {
-        height: 34px;
-        width: 34px;
+        height: 33px;
+        width: 33px;
     }
 }
 
@@ -395,5 +395,11 @@ a {
 
     .contact-item {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 370px) {
+    .contact-item {
+        font-size: 10.5px;
     }
 }

@@ -32,16 +32,11 @@ body {
     margin-bottom: 50px;
 }
 
-.portfolio-container.vector img:not(:last-child) {
-    margin-bottom: 88px;
-}
-
-.portfolio-container.poligraph img:not(:last-child) {
-    margin-bottom: 36px;
-}
-
-.portfolio-container.sketch img:not(:last-child) {
-    margin-bottom: 88px;
+.portfolio-container.propisi img {
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
+    align-self: center;
 }
 
 /* --- CARD STYLES --- */
